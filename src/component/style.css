@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Bona Nova', serif;
+}
+body{
+    background-color: #fcde67;
+}
+.main{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.heading h1{
+    color:#030e12;
+    font-size: 48px;
+    font-weight:900;
+    letter-spacing: 1px;
+    padding-top:2rem;
+    margin: 1rem;
+}
+.search-bar{
+    width:300px;
+    font-size: 30px;
+    padding: 5px;
+}
+.search-btn{
+    width: 120px;
+    font-size: 30px;
+    padding: 5px;
+}
+.search-bar:hover{
+    border: 3px solid black;
+    font-size: 35px;
+}
+.search-btn:hover{
+    border: 3px solid black;
+    font-size: 35px;
+}
+.searchBox{
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: center;
+}
+.container{
+    /* width: 80%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+.card{
+    margin: 10px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    width: 280px;
+    border-radius: 1rem;
+    background-color: #030e12;
+    padding: 5px;
+}
+.card img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+a {
+    background-color: #FFBA5A;
+    color: inherit;
+    /* margin-top: 80px; */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px auto;
+    text-decoration: none;
+  }
+ .card-body{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.card-body h3{
+  margin: 20px;
+}
