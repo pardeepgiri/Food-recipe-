@@ -5,40 +5,31 @@
     margin: 0;
     font-family: 'Bona Nova', serif;
 }
-body{
-    background-color: #fcde67;
-}
 .main{
-    width: 80%;
-    margin: 0 auto;
+    background-color: #f7f7f7;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
     text-align: center;
 }
+
 .heading h1{
     color:#030e12;
     font-size: 48px;
     font-weight:900;
     letter-spacing: 1px;
-    padding-top:2rem;
+    /* padding-top:3rem; */
     margin: 1rem;
 }
 .search-bar{
     width:300px;
     font-size: 30px;
     padding: 5px;
+    border-radius: 10px;
 }
-.search-btn{
-    width: 120px;
-    font-size: 30px;
-    padding: 5px;
-}
-.search-bar:hover{
-    border: 3px solid black;
-    font-size: 35px;
-}
-.search-btn:hover{
-    border: 3px solid black;
-    font-size: 35px;
-}
+
 .searchBox{
     margin: 2rem;
     display: flex;

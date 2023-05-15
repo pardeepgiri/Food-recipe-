@@ -17,6 +17,12 @@ const App = () => {
     })
   },[url]);
 
+  function enterfun(e){
+    if(e.key==="Enter"){
+      urlvalfun();
+    }
+  }
+
   const urlvalfun=(evt)=>{
     setSearch("")
     setUrl(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
@@ -28,8 +34,8 @@ const App = () => {
                 <h1>Search Your Food Recipe</h1>
      </div>
       <div className="searchBox">
-        <input type='text' className="search-bar" value={search} onChange={(e)=>setSearch(e.target.value)} ></input>
-        <button onClick={urlvalfun} className='search-btn'> Search</button>
+        <input type='text' placeholder="Search here..."  className="search-bar" 
+        value={search} onChange={(e)=>setSearch(e.target.value)}  onKeyPress={enterfun}></input>
       </div>
       <div className="container">
         
@@ -38,7 +44,7 @@ const App = () => {
              key={recipe.idMeal}
              recipe={recipe}
           />
-        )) : "No Results Found."}
+        )) : <h1>No Result found</h1>}
       </div>
 
     </div>
