@@ -1,78 +1,212 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Bona Nova', serif;
 }
-.main{
-    background-color: #f7f7f7;
-    max-width: 1000px;
-    min-height: 100vh;
-    margin: 30px auto;
-    padding: 30px;
-    border-radius: 20px;
+
+/* ... Header Styles ... */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #d3d2d2;
+    background-color: white;
+    padding: 10px;
+}
+
+.heading h1 {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin: 1rem;
+}
+
+.search-bar {
+    width: 200px;
+    font-size: 25px;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.searchbtn {
+    width: 90px;
+    font-size: 25px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: #b1aeae;
+    color: white;
+}
+
+.search-box {
+    width: 100%;
+    max-width: 400px;
+    background-color: #b1aeae;
+    border: 2px solid #999;
+    border-radius: 5px;
+    max-height: 40px;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.cart {
+    font-size: 28px;
+    font-weight: 600;
+}
+a,
+.addbtn {
+    background-color: #FFBA5A;
+    color: inherit;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+
+}
+/* ... Recipe Card Styles ... */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.card {
+    margin: 12px;
+    border-radius: 5px;
+    width: 280px;
+    border-radius: 1rem;
+    background-color: #eee9e9;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-body {
+    padding: 20px;
     text-align: center;
 }
 
-.heading h1{
-    color:#030e12;
-    font-size: 48px;
-    font-weight:900;
-    letter-spacing: 1px;
-    /* padding-top:3rem; */
-    margin: 1rem;
-}
-.search-bar{
-    width:300px;
-    font-size: 30px;
-    padding: 5px;
-    border-radius: 10px;
+.card-body h3 {
+    margin: 20px;
 }
 
-.searchBox{
-    margin: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:row;
-    justify-content: center;
+/* ... Cart Styles ... */
+.cartapp {
+    background-color: #030e12;
+    margin: 10px auto;
+    padding: 20px auto;
+    color: white;
 }
-.container{
-    /* width: 80%; */
+
+.cart-box {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 20px auto;
 }
-.card{
-    margin: 10px;
-    border-radius: 5px;
-    padding-bottom: 10px;
-    width: 280px;
-    border-radius: 1rem;
-    background-color: #030e12;
-    padding: 5px;
+
+.cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.card img{
-    width: 100%;
-    border-radius: 1rem 1rem 0 0;
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
-a {
-    background-color: #FFBA5A;
-    color: inherit;
-    /* margin-top: 80px; */
-    border-radius: 10px;
-    padding: 10px;
-    margin: 20px auto;
-    text-decoration: none;
-  }
- .card-body{
-    padding: 20px;
-    text-align: center;
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.cartcount {
+    background-color: rgb(168, 167, 164);
     color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 12px;
 }
-.card-body h3{
-  margin: 20px;
+
+.item-details {
+    display: flex;
+    flex: 1;
+    align-items: center;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .heading h1 {
+        font-size: 36px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .searchbtn {
+        width: 100%;
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .cart-box {
+        flex-direction: column;
+    }
+
+    .cart-item {
+        margin-right: 0;
+    }
+
+    .cart-items {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .heading h1 {
+        font-size: 24px;
+    }
+
+    .search-box {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .card img {
+        height: 150px;
+    }
+}
+  
+  
+  
+  
